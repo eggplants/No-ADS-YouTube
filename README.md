@@ -1,11 +1,10 @@
 # No-ADS-YouTube 🙅‍♂️⛔
 
-![SubscribeYoutubeGIF](https://github.com/di4b0lical/No-ADS-YouTube/assets/79179978/2977cd2d-a56e-4231-a270-0e4645daa056)
-
-
 <h3>I would like to welcome all the new comers. Didn't expect to suddenly get traction as I wrote this script 2 years ago, but nonetheless enjoy my shit project 🙏<br></h3><br><br>
 
 Skips all youtube ads  |  removes banner and sidebar ads | skips ads instantly
+
+Feel free to checkout my Hulu Ads remover (gives you no ads hulu for free): <a href="https://github.com/di4b0lical/NAH-No-Ads-Hulu">NAH - No Ads Hulu 🙅‍♂️</a>
 
 <h3>Steps for use: </h3>
 <ol style="margin-bottom:10px;">
