@@ -1,4 +1,7 @@
-# No-ADS-YouTube 🥳
+# No-ADS-YouTube 🙅‍♂️⛔
+
+![SubscribeYoutubeGIF](https://github.com/di4b0lical/No-ADS-YouTube/assets/79179978/2977cd2d-a56e-4231-a270-0e4645daa056)
+
 
 <h3>I would like to welcome all the new comers. Didn't expect to suddenly get traction as I wrote this script 2 years ago, but nonetheless enjoy my shit project 🙏<br></h3><br><br>
 
