@@ -1,6 +1,6 @@
 # No-ADS-YouTube 🥳
 
-<h3>I would like to welcome all the new comers. Didn't expect to suddenly get traction as I wrote this script 2 years ago, but nonetheless enjoy my shit project 😭😭<br></h3><br><br>
+<h3>I would like to welcome all the new comers. Didn't expect to suddenly get traction as I wrote this script 2 years ago, but nonetheless enjoy my shit project 🙏<br></h3><br><br>
 
 Skips all youtube ads  |  removes banner and sidebar ads | skips ads instantly
 
