@@ -34,6 +34,7 @@
     // rightSideShorts
     Array.from(document.getElementsByTagName("ytd-reel-shelf-renderer")).forEach(e=>e.remove());
 
+    // skip following ad remover unless video page
     if (!isExists("video-stream html5-main-video")) {
       return;
     }
