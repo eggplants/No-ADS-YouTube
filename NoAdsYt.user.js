@@ -16,8 +16,7 @@
   let ogVolume = 1;
   let pbRate = 1;
 
-  const get = (className) => document.getElementsByClassName(className);
-  const getFirst = (className) => get(className)[0];
+  const getFirst = (className) => document.getElementsByClassName(className)[0];
 
   setInterval(() => {
     // bottomSideAd
@@ -50,7 +49,7 @@
     }
 
     // closeAble
-    Array.from(get("ytp-ad-overlay-close-button")).forEach((e) => e.click());
+    Array.from(document.getElementsByClassName("ytp-ad-overlay-close-button")).forEach((e) => e.click());
 
     // skipBtn
     getFirst("ytp-ad-text ytp-ad-skip-button-text")?.click();
