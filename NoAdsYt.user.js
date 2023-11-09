@@ -59,19 +59,19 @@
     const sideAd1 = getFirst(
       "style-scope ytd-watch-next-secondary-results-renderer sparkles-light-cta GoogleActiveViewElement",
     );
-    if (!isExistsElm(sideAd1)) {
+    if (isExistsElm(sideAd1)) {
       sideAd1.style.display = "none";
     }
 
     const sideAd2 = getFirst(
       "style-scope ytd-item-section-renderer sparkles-light-cta",
     );
-    if (!isExistsElm(sideAd2)) {
+    if (isExistsElm(sideAd2)) {
       sideAd2.style.display = "none";
     }
 
     const incomingAd = getFirst("ytp-ad-message-container");
-    if (!isExistsElm(incomingAd)) {
+    if (isExistsElm(incomingAd)) {
       incomingAd.style.display = "none";
     }
   }, 100);
