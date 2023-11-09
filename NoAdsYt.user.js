@@ -22,6 +22,18 @@
   const isExists = (className) => isExistsElm(getFirst(className));
 
   setInterval(() => {
+    // bottomSideAd
+    getFirst("style-scope ytd-companion-slot-renderer")?.remove();
+
+    // headerAd
+    document.getElementById("masthead-ad")?.remove();
+
+    // rightSideAd
+    Array.from(document.getElementsByTagName("ytd-ad-slot-renderer")).forEach(e=>e.remove());
+
+    // rightSideShorts
+    Array.from(document.getElementsByTagName("ytd-reel-shelf-renderer")).forEach(e=>e.remove());
+
     if (!isExists("video-stream html5-main-video")) {
       return;
     }
@@ -62,17 +74,5 @@
     if (!isExistsElm(incomingAd)) {
       incomingAd.style.display = "none";
     }
-
-    // bottomSideAd
-    getFirst("style-scope ytd-companion-slot-renderer")?.remove();
-
-    // headerAd
-    document.getElementById("masthead-ad")?.remove();
-
-    // rightSideAd
-    Array.from(document.getElementsByTagName("ytd-ad-slot-renderer")).forEach(e=>e.remove());
-
-    // rightSideShorts
-    Array.from(document.getElementsByTagName("ytd-reel-shelf-renderer")).forEach(e=>e.remove());
   }, 100);
 })();
