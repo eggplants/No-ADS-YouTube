@@ -56,6 +56,9 @@
     // skipBtn
     getFirst("ytp-ad-text ytp-ad-skip-button-text")?.click();
 
+    // Hover Ad for YouTube Premium
+    document.getElementById("dismiss-button")?.click();
+
     const sideAd1 = getFirst(
       "style-scope ytd-watch-next-secondary-results-renderer sparkles-light-cta GoogleActiveViewElement",
     );
