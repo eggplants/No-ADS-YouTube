@@ -18,8 +18,6 @@
 
   const get = (className) => document.getElementsByClassName(className);
   const getFirst = (className) => get(className)[0];
-  const isExistsElm = (elm) => ![undefined, null].includes(elm);
-  const isExists = (className) => isExistsElm(getFirst(className));
 
   setInterval(() => {
     // bottomSideAd
@@ -35,17 +33,17 @@
     Array.from(document.getElementsByTagName("ytd-reel-shelf-renderer")).forEach(e=>e.remove());
 
     // skip following ad remover unless video page
-    if (!isExists("video-stream html5-main-video")) {
+    if (!getFirst("video-stream html5-main-video")) {
       return;
     }
 
     const ad = getFirst("video-ads ytp-ad-module");
     const vid = getFirst("video-stream html5-main-video");
-    // if (!isExistsElm(ad)) { pbRate = vid.playbackRate; }
+    // if (!ad) { pbRate = vid.playbackRate; }
     if (
-      isExistsElm(ad) &&
+      ad &&
       ad.children.length > 0 &&
-      isExists("ytp-ad-text ytp-ad-preview-text")
+      getFirst("ytp-ad-text ytp-ad-preview-text")
     ) {
       vid.playbackRate = 16;
       vid.muted = true;
@@ -63,19 +61,19 @@
     const sideAd1 = getFirst(
       "style-scope ytd-watch-next-secondary-results-renderer sparkles-light-cta GoogleActiveViewElement",
     );
-    if (isExistsElm(sideAd1?.style)) {
+    if (sideAd1?.style) {
       sideAd1.style.display = "none";
     }
 
     const sideAd2 = getFirst(
       "style-scope ytd-item-section-renderer sparkles-light-cta",
     );
-    if (isExistsElm(sideAd2?.style)) {
+    if (sideAd2?.style) {
       sideAd2.style.display = "none";
     }
 
     const incomingAd = getFirst("ytp-ad-message-container");
-    if (isExistsElm(incomingAd?.style)) {
+    if (incomingAd?.style) {
       incomingAd.style.display = "none";
     }
   }, 100);
