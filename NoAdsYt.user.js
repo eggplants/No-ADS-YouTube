@@ -70,9 +70,9 @@
     document.getElementById("masthead-ad")?.remove();
 
     // rightSideAd
-    document.getElementsByTagName("ytd-ad-slot-renderer")[0]?.remove();
+    Array.from(document.getElementsByTagName("ytd-ad-slot-renderer")).forEach(e=>e.remove());
 
     // rightSideShorts
-    document.getElementsByTagName("ytd-reel-shelf-renderer")[0]?.remove();
+    Array.from(document.getElementsByTagName("ytd-reel-shelf-renderer")).forEach(e=>e.remove());
   }, 100);
 })();
