@@ -19,17 +19,11 @@
   const getFirst = (className) => document.getElementsByClassName(className)[0];
 
   setInterval(() => {
-    // bottomSideAd
-    getFirst("style-scope ytd-companion-slot-renderer")?.remove();
-
     // headerAd
     document.getElementById("masthead-ad")?.remove();
 
     // rightSideAd
     Array.from(document.getElementsByTagName("ytd-ad-slot-renderer")).forEach(e=>e.remove());
-
-    // rightSideShorts
-    Array.from(document.getElementsByTagName("ytd-reel-shelf-renderer")).forEach(e=>e.remove());
 
     // skip following ad remover unless video page
     if (!getFirst("video-stream html5-main-video")) {
@@ -56,6 +50,12 @@
 
     // Hover Ad for YouTube Premium
     document.getElementById("dismiss-button")?.click();
+
+        // bottomSideAd
+    getFirst("style-scope ytd-companion-slot-renderer")?.remove();
+
+    // rightSideShorts
+    Array.from(document.getElementsByTagName("ytd-reel-shelf-renderer")).forEach(e=>e.remove());
 
     const sideAd1 = getFirst(
       "style-scope ytd-watch-next-secondary-results-renderer sparkles-light-cta GoogleActiveViewElement",
