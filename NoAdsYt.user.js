@@ -13,8 +13,8 @@
 (function () {
   "use strict";
 
-  let ogVolume = 1;
-  let pbRate = 1;
+  // let ogVolume = 1;
+  // let pbRate = 1;
 
   const getFirst = (className) => document.getElementsByClassName(className)[0];
 
