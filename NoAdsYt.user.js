@@ -51,7 +51,7 @@
     // Hover Ad for YouTube Premium
     document.getElementById("dismiss-button")?.click();
 
-        // bottomSideAd
+    // bottomSideAd
     getFirst("style-scope ytd-companion-slot-renderer")?.remove();
 
     // rightSideShorts
